@@ -36,6 +36,12 @@
         main {
             grid-area: search;
         }
+        button {
+            border: none;
+            background-color: #f3f3f3;
+            font-size: 1.3em;
+            padding: 0em .4em;
+        }
         footer {
             grid-area: footer;
             display: flex;
@@ -63,7 +69,6 @@
             align-items: center;
         }
         #sign-in {
-            border:none;
             color: #FFFFFF;
             height: 100%;
             background-color: #4285F4;
@@ -92,6 +97,10 @@
         #terms-and-service {
             display:flex;
             margin-left: auto;
+        }
+        #search-buttons {
+            display: flex;
+            justify-content: space-around;
         }
     </style>
     <body>
@@ -128,8 +137,8 @@
                     <input id="search-bar" type="text">
                 </form>
                 <div id="search-buttons">
-                    <button id="search">Google Search</button>
-                    <button id="feeling-lucky">I'm Feeling Lucky</button>
+                    <a href="#"><button id="search">Google Search</button></a>
+                    <a href="#"><button id="feeling-lucky">I'm Feeling Lucky</button></a>
                 </div>
             </div>
         </main>
