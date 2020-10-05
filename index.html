@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Search Page</title>
+    </head>
+    <style>
+        body {
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 5% 85% 10%;
+        }
+        .google {
+            --google-red: #DB4437;
+            --google-blue: #4285F4;
+            --google-yellow: #F4B400;
+            --google-green: #0F9D58;
+        }
+        #header-links {
+            display:flex;
+            flex-direction: row;
+        }
+        #company-info {
+            display: flex;
+            flex-direction: row;
+            justify-self: flex-start;
+        }
+        #services {
+            display: flex;
+            flex-direction:row;
+            justify-self: flex-end;
+        }
+        #google-logo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+    <body>
+        <header id="header-links">
+            <div id="company-info">
+                <p><a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header" class="header-link">About</a></p>
+                <p><a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US" class="header-link">Store</a></p>
+            </div>
+            <div id="services">
+                <p><a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="header-link">Gmail</a></p>
+                <p><a href="https://www.google.com/imghp?hl=en&tab=wi&authuser=0&ogbl" class="header-link">Images</a></p>
+                <div id="gapps">
+                    <div class="gapps"></div>
+                    <div class="gapps"></div>
+                    <div class="gapps"></div>
+                    <div class="gapps"></div>
+                    <div class="gapps"></div>
+                    <div class="gapps"></div>
+                    <div class="gapps"></div>
+                    <div class="gapps"></div>
+                    <div class="gapps"></div>
+                </div>
+                <div id="account">
+                    <button id="sign-in">Sign In</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <a href="https://www.google.com"><img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo"></a>
+            <form>
+                <input id="search-bar" type="text">
+            </form>
+            <div id="search-buttons">
+                <button id="search">Google Search</button>
+                <button id="feeling-lucky">I'm Feeling Lucky</button>
+            </div>
+        </main>
+        <footer>
+            <div id="b2b">
+                <p><a href="https://ads.google.com/intl/en_us/home/" class="footer-link">Avertising</a></p>
+                <p><a href="https://smallbusiness.withgoogle.com/#!/" class="footer-link">Business</a></p>
+                <p><a href="https://www.google.com/search/howsearchworks/?fg=1" class="footer-link">How Search Works</a></p>
+            </div>
+            <div id="Terms-and-service">
+                <p><a href="https://policies.google.com/privacy?hl=en&fg=1" class="footer-link">Privacy</a></p>
+                <p><a href="https://policies.google.com/terms?hl=en&fg=1" class="footer-link">Terms</a></p>
+                <p><a href="https://www.google.com/preferences?hl=en" class="footer-link">Settings</a></p>
+            </div>
+        </footer>
+    </body>
+</html>
